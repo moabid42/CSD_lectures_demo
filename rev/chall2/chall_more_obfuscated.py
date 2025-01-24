@@ -1,0 +1,1 @@
+import sys; (lambda T: (lambda f: (print(f), print("Correct!" if f==T else "Incorrect!"))) (bytes([((((((ord(c)^0x13)-17)+i)^0x42)+8)^0x37) for i,c in enumerate(input("Enter flag: ").strip())][::-1])))(b'\x0evp\x0e\x0eqp\'u\x1e\x08\x138\x0e\x1a\x0e\x16\x0e\x16"!lk')
