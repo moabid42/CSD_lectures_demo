@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>42Heilbronn Login</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(to bottom, #1e1e2e, #1b2b34);
+        color: #d9e0ee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: #2e3440;
+        /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/8/8b/42_logo.svg'); */
+        background-size: cover;
+        background-position: center;
+      }
+
+      main {
+        text-align: center;
+        background: rgba(30, 30, 46, 0.9);
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        width: 90%;
+        max-width: 400px;
+      }
+
+      h1 {
+        color: #89dceb;
+        margin-bottom: 2rem;
+      }
+
+      form input[type="text"],
+      form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin: 0.5rem 0;
+        border: 1px solid #89dceb;
+        border-radius: 5px;
+        background: #2e3440;
+        color: #d9e0ee;
+      }
+
+      form label {
+        display: block;
+        text-align: left;
+        font-size: 0.9rem;
+        margin-bottom: 0.3rem;
+      }
+
+      form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 1rem;
+        background-color: #89dceb;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #1e1e2e;
+        cursor: pointer;
+        text-transform: uppercase;
+      }
+
+      form input[type="submit"]:hover {
+        background-color: #74c7ec;
+      }
+
+      .extras {
+        margin-top: 1rem;
+        font-size: 0.85rem;
+        color: #b3b3b3;
+      }
+
+      .extras a {
+        color: #89dceb;
+        text-decoration: none;
+      }
+
+      .extras a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <img
+        src="https://auth.42.fr/auth/resources/yyzrk/login/students/img/42_logo.svg"
+        alt="42Heilbronn Logo"
+        style="width: 60px; margin-bottom: 1rem;"
+      />
+      <h1>Login</h1>
+      <form action="/login" method="post">
+        <label for="username">Login or Email</label>
+        <input id="username" name="username" type="text" required />
+
+        <label for="password">Password</label>
+        <input id="password" name="password" type="password" required />
+
+        <input type="submit" value="Sign In" />
+
+        <div class="extras">
+          <a href="#">Forgot or change your password?</a><br />
+          <a href="#">Sign in as staff</a><br />
+          <a href="#">Read our terms and conditions</a>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

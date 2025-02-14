@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
+    />
+    <title>Simple Login</title>
+    <style>
+      body {
+        text-align: center;
+        padding: 2rem;
+      }
+
+      marquee {
+        color: #74c7ec;
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        font-weight: bold;
+      }
+
+      main {
+        max-width: 500px;
+        margin: 0 auto;
+      }
+
+      h1 {
+        color: #89dceb;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: #d9e0ee;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Simple Login</h1>
+      <p>Hello, {{username}}</p>
+      <marquee scrollamount="16" direction="right">
+        Logged in successfully🎉
+      </marquee>
+    </main>
+  </body>
+</html>
